@@ -19,24 +19,6 @@ Includes a splash screen and login system for a polished experience.
 
 ⸻
 
-⚡ Future Improvements
-	•	📈 Analytics for streaks and long-term progress
-	•	☁️ Sync with Firebase for cloud backup
-
-⸻
-
-🤝 Contributing
-
-Contributions are welcome! 🎉
-Feel free to fork this repo and submit a pull request.
-
-⸻
-
-📜 License
-
-This project is licensed under the MIT License.
-
-
 🛠️ Tech Stack
 	•	SwiftUI → Declarative UI
 	•	RealmSwift → Local database for habits
@@ -56,7 +38,7 @@ This project is licensed under the MIT License.
 	•	Run pod install if you’re using CocoaPods (else Swift Package Manager handles Realm).
 
 3️⃣ Open Project
-open HabitsHome.xcodeproj
+open HabitHome.xcodeproj
 
 4️⃣ Build & Run
 	•	Select iOS Simulator or device.
@@ -66,7 +48,7 @@ open HabitsHome.xcodeproj
 
 📂 Project Structure
 
- HabitsHome/
+ HabitHome/
 │── Models/
 │   └── Habit.swift
 │── Views/
@@ -75,7 +57,7 @@ open HabitsHome.xcodeproj
 │   ├── HomeView.swift
 │   ├── HabitView.swift
 │   └── HabitRowView.swift
-│── HabitsHomeApp.swift
+│── HabitHomeApp.swift
 │── README.md
 
 ⸻
