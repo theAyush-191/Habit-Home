@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A9EC3FB42E79B5020094B81F /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A9EC3FB32E79B5020094B81F /* RealmSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A9EC3F842E79B49A0094B81F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9EC3FB42E79B5020094B81F /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = "Habit Home";
 			packageProductDependencies = (
+				A9EC3FB32E79B5020094B81F /* RealmSwift */,
 			);
 			productName = "Habit Home";
 			productReference = A9EC3F762E79B4970094B81F /* Habit Home.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = A9EC3F6D2E79B4970094B81F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A9EC3FB22E79B5020094B81F /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A9EC3F772E79B4970094B81F /* Products */;
 			projectDirPath = "";
@@ -558,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9EC3FB22E79B5020094B81F /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9EC3FB32E79B5020094B81F /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9EC3FB22E79B5020094B81F /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A9EC3F6E2E79B4970094B81F /* Project object */;
 }
