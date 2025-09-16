@@ -19,15 +19,6 @@ Includes a splash screen and login system for a polished experience.
 
 ⸻
 
-📸 Screenshots
-<img width="300" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-16 at 23 39 22" src="https://github.com/user-attachments/assets/5f7b3932-f12b-4353-8405-d6d2576b863c" />
-<img width="300" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-16 at 23 39 31" src="https://github.com/user-attachments/assets/1a3264ee-8e16-4733-8ccd-45bd92cf4cd0" />
-<img width="300" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-16 at 23 39 52" src="https://github.com/user-attachments/assets/c52c8523-1056-49bf-8679-3e437bd2e5c9" />
-<img width="300" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-16 at 23 39 44" src="https://github.com/user-attachments/assets/c0a2235d-829c-4457-bb69-662bf1376892" />
-<img width="300" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-16 at 23 39 38" src="https://github.com/user-attachments/assets/f3234e95-18da-4da7-8158-847b63cb07f0" />
-
-
-
 ⚡ Future Improvements
 	•	📈 Analytics for streaks and long-term progress
 	•	☁️ Sync with Firebase for cloud backup
@@ -96,6 +87,14 @@ open HabitsHome.xcodeproj
 	•	🎨 Dark mode + custom themes
 
 ⸻
+📸 Screenshots
+<img width="300" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-16 at 23 39 22" src="https://github.com/user-attachments/assets/5f7b3932-f12b-4353-8405-d6d2576b863c" />
+<img width="300" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-16 at 23 39 31" src="https://github.com/user-attachments/assets/1a3264ee-8e16-4733-8ccd-45bd92cf4cd0" />
+<img width="300" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-16 at 23 39 52" src="https://github.com/user-attachments/assets/c52c8523-1056-49bf-8679-3e437bd2e5c9" />
+<img width="300" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-16 at 23 39 44" src="https://github.com/user-attachments/assets/c0a2235d-829c-4457-bb69-662bf1376892" />
+<img width="300" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-16 at 23 39 38" src="https://github.com/user-attachments/assets/f3234e95-18da-4da7-8158-847b63cb07f0" />
+
+⸻
 
 🤝 Contributing
 
@@ -107,3 +106,10 @@ Feel free to fork this repo and submit a pull request.
 📜 License
 
 This project is licensed under the MIT License.
+
+⸻
+
+🎥 Video
+
+https://github.com/user-attachments/assets/d33b7371-0da3-421c-954b-da5a525adc26
+
