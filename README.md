@@ -70,6 +70,7 @@ open HabitHome.xcodeproj
 
 ⸻
 📸 Screenshots
+
 <img width="300" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-16 at 23 39 22" src="https://github.com/user-attachments/assets/5f7b3932-f12b-4353-8405-d6d2576b863c" />
 <img width="300" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-16 at 23 39 31" src="https://github.com/user-attachments/assets/1a3264ee-8e16-4733-8ccd-45bd92cf4cd0" />
 <img width="300" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-16 at 23 39 52" src="https://github.com/user-attachments/assets/c52c8523-1056-49bf-8679-3e437bd2e5c9" />
