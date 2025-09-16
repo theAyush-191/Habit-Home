@@ -48,7 +48,7 @@ This project is licensed under the MIT License.
 🚀 Getting Started
 
 1️⃣ Clone Repository
-~ git clone [https://github.com/your-username/habits-home.git](https://github.com/theAyush-191/Habit-Home.git)
+~ git clone [https://github.com/theAyush-191/Habit-Home.git]
 ~ cd habits-home
 
 2️⃣ Install Dependencies
