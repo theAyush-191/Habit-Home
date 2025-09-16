@@ -68,7 +68,7 @@ struct HabitView: View {
             .padding(.horizontal, 20)
             
             
-            // Habits List
+ 
             ZStack{
                 Color(.systemGroupedBackground)
                 if habits.isEmpty {
@@ -85,7 +85,7 @@ struct HabitView: View {
                 }else{
                     VStack(spacing: 20) {
                         
-                        // Progress Bar
+               
                         VStack(alignment: .leading) {
                             HStack{
                                 Text("Progress: \(Int(progress * 100))%")

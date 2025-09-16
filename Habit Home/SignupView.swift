@@ -22,8 +22,8 @@ struct SignupView: View {
         VStack(spacing:20) {
             
             HStack{
-                Image("logo").resizable().frame(width: 80, height: 80)
-                Text("Mind Track").bold().font(.largeTitle).offset(x:-15,y:-4)
+                Image(systemName:"leaf.fill").resizable().frame(width: 40, height: 40).foregroundStyle(.customGreen)
+                Text("Habits Home").bold().font(.largeTitle)
             }
             
             Text("Sign Up").font(.largeTitle).fontWeight(.heavy).bold().frame(maxWidth: .infinity,alignment: .leading)

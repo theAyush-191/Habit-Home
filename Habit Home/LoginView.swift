@@ -23,7 +23,7 @@ struct LoginView: View {
                 
                 HStack{
                     Image(systemName:"leaf.fill").resizable().frame(width: 30, height: 30).foregroundStyle(.customGreen)
-                    Text("Mind Track").bold().font(.largeTitle)
+                    Text("Habits Home").bold().font(.largeTitle)
                 }
                 
                 Text("Login").font(.largeTitle).fontWeight(.heavy).bold().frame(maxWidth: .infinity,alignment: .leading)
@@ -44,6 +44,8 @@ struct LoginView: View {
                 
                 Button(action:{
                     showHomeView=true
+                    email=""
+                    password=""
                 }){
                     Text("Login ").font(.title2).padding(20).foregroundColor(.white).frame(width: .infinity, height: 50).background(RoundedRectangle(cornerRadius: 30).fill(Color(.customGreen)))
                 }.navigationDestination(isPresented: $showHomeView) {

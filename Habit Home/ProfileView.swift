@@ -18,26 +18,26 @@ struct ProfileView: View {
     var body: some View {
         VStack(spacing: 20) {
             
-            // Profile Image
-            Image("profilePic") // replace with your asset name
+         
+            Image("profilePic")
                 .resizable()
                 .scaledToFill()
                 .frame(width: 100, height: 100)
                 .clipShape(Circle())
                 .shadow(radius: 4)
             
-            // Name
+        
             Text("Ayush Singh")
                 .font(.title2)
                 .fontWeight(.semibold)
             
-            // Email
+    
             Text("ayush.singh@example.com")
                 .font(.subheadline)
                 .foregroundColor(.black)
                 .underline()
             
-            // Current Streak Card
+
             VStack(spacing: 8) {
                 Text("Current Streak")
                     .font(.subheadline)
@@ -59,7 +59,6 @@ struct ProfileView: View {
             .background(Color.green.opacity(0.2))
             .cornerRadius(12)
             
-            // Quote Card
             Text("\"Consistency is the key to achieving lasting wellness.\"")
                 .font(.body)
                 .multilineTextAlignment(.center)
@@ -69,7 +68,7 @@ struct ProfileView: View {
                 .cornerRadius(12)
                 .shadow(color: Color(.systemGray4), radius: 2, x: 0, y: 2)
             
-            // Logout Button
+           
             Button(action: {
                 withAnimation {
                     dismiss()

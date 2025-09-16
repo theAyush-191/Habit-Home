@@ -50,7 +50,7 @@ struct Habit_HomeApp: App {
            let calendar = Calendar.current
            
            if lastLaunchDate == 0 {
-               // first launch
+        
                streakCount = 1
            } else {
                let lastDate = Date(timeIntervalSince1970: lastLaunchDate)
@@ -58,12 +58,12 @@ struct Habit_HomeApp: App {
                let days = calendar.dateComponents([.day], from: calendar.startOfDay(for: lastDate), to: calendar.startOfDay(for: now)).day ?? 0
                
                if days == 0 {
-                   // same day → don’t change streak
+                   
                } else if days == 1 {
-                   // consecutive day → increment streak
+               
                    streakCount += 1
                } else {
-                   // missed at least one day → reset streak
+                
                    streakCount = 1
                }
            }
