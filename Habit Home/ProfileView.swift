@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    @AppStorage("isLoggedIn") var isLoggedIn: Bool = true
+    @AppStorage("isLoggedIn") var isLoggedIn: Bool = false
     @AppStorage("streakCount") private var streakCount = 0
     
     @Environment(\.dismiss) private var dismiss

@@ -6,11 +6,13 @@
 ////
 
 import SwiftUI
-import RealmSwift
 
 struct HabitRowView: View {
     
-    @ObservedRealmObject var habit: Habit
+    @Environment(\.modelContext) private var Context
+    
+    @Bindable var habit:Habit
+    
     @State private var isChangingHabit = false
     @State private var isEditingHabit = false
     @State private var habitName = ""
@@ -22,18 +24,18 @@ struct HabitRowView: View {
                 .font(.title)
                 .foregroundColor(habit.isCompleted ? .green : .gray)
                 .onTapGesture {
-                    $habit.isCompleted.wrappedValue.toggle()
+                    habit.isCompleted = !habit.isCompleted
                 }
             
         
-            Text(habit.name)
+            Text(habit.habit)
                 .font(.headline)
             
             Spacer()
             
 
             Button {
-                $habit.isCompleted.wrappedValue.toggle()
+                habit.isCompleted = !habit.isCompleted
             } label: {
                 Text(habit.isCompleted ? "Done" : "Mark Done")
                     .font(.subheadline)
@@ -50,26 +52,20 @@ struct HabitRowView: View {
             }
             .alert("Select Action", isPresented: $isChangingHabit) {
                 Button("Edit") {
-                    habitName = habit.name
+                    habitName = habit.habit
                     isEditingHabit = true
                 }
                 Button("Delete", role: .destructive) {
                     
-                    if let thawedHabit = habit.thaw(),
-
-                       let realm = thawedHabit.realm {
-
-                        try? realm.write {
-                            realm.delete(thawedHabit)
-                        }
-                    }
+                    Context.delete(habit)
                 
                 }
             }
             .alert("Edit Habit", isPresented: $isEditingHabit) {
                 TextField("Enter new name", text: $habitName)
                 Button("Save") {
-                    $habit.name.wrappedValue = habitName
+                    habit.habit = habitName
+                    habit.createdAt=Date()
                     isEditingHabit = false
                 }
                 Button("Cancel", role: .cancel) {}

@@ -15,6 +15,9 @@ struct LoginView: View {
     @State var showSignUp: Bool = false
     @State var showHomeView: Bool = false
     
+    @AppStorage("isLoggedIn") var isLoggedIn: Bool = false
+    
+    
     var body: some View {
                 
               
@@ -46,6 +49,8 @@ struct LoginView: View {
                     showHomeView=true
                     email=""
                     password=""
+                    isLoggedIn=true
+                    
                 }){
                     Text("Login ").font(.title2).padding(20).foregroundColor(.white).frame(width: .infinity, height: 50).background(RoundedRectangle(cornerRadius: 30).fill(Color(.customGreen)))
                 }.navigationDestination(isPresented: $showHomeView) {

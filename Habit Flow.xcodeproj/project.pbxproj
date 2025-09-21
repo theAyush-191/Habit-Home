@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		A9EC3FB42E79B5020094B81F /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A9EC3FB32E79B5020094B81F /* RealmSwift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		A9EC3F842E79B49A0094B81F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -28,7 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A9EC3F762E79B4970094B81F /* Habit Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habit Home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9EC3F762E79B4970094B81F /* Habit Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habit Flow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EC3F832E79B49A0094B81F /* Habit HomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Habit HomeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EC3F8D2E79B49A0094B81F /* Habit HomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Habit HomeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -56,7 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9EC3FB42E79B5020094B81F /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +85,7 @@
 		A9EC3F772E79B4970094B81F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A9EC3F762E79B4970094B81F /* Habit Home.app */,
+				A9EC3F762E79B4970094B81F /* Habit Flow.app */,
 				A9EC3F832E79B49A0094B81F /* Habit HomeTests.xctest */,
 				A9EC3F8D2E79B49A0094B81F /* Habit HomeUITests.xctest */,
 			);
@@ -100,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A9EC3F752E79B4970094B81F /* Habit Home */ = {
+		A9EC3F752E79B4970094B81F /* Habit Flow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9EC3F972E79B49A0094B81F /* Build configuration list for PBXNativeTarget "Habit Home" */;
+			buildConfigurationList = A9EC3F972E79B49A0094B81F /* Build configuration list for PBXNativeTarget "Habit Flow" */;
 			buildPhases = (
 				A9EC3F722E79B4970094B81F /* Sources */,
 				A9EC3F732E79B4970094B81F /* Frameworks */,
@@ -115,12 +110,11 @@
 			fileSystemSynchronizedGroups = (
 				A9EC3F782E79B4970094B81F /* Habit Home */,
 			);
-			name = "Habit Home";
+			name = "Habit Flow";
 			packageProductDependencies = (
-				A9EC3FB32E79B5020094B81F /* RealmSwift */,
 			);
 			productName = "Habit Home";
-			productReference = A9EC3F762E79B4970094B81F /* Habit Home.app */;
+			productReference = A9EC3F762E79B4970094B81F /* Habit Flow.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A9EC3F822E79B49A0094B81F /* Habit HomeTests */ = {
@@ -177,7 +171,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1640;
-				LastUpgradeCheck = 1640;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					A9EC3F752E79B4970094B81F = {
 						CreatedOnToolsVersion = 16.4;
@@ -192,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A9EC3F712E79B4970094B81F /* Build configuration list for PBXProject "Habit Home" */;
+			buildConfigurationList = A9EC3F712E79B4970094B81F /* Build configuration list for PBXProject "Habit Flow" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -202,14 +196,13 @@
 			mainGroup = A9EC3F6D2E79B4970094B81F;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				A9EC3FB22E79B5020094B81F /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A9EC3F772E79B4970094B81F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A9EC3F752E79B4970094B81F /* Habit Home */,
+				A9EC3F752E79B4970094B81F /* Habit Flow */,
 				A9EC3F822E79B49A0094B81F /* Habit HomeTests */,
 				A9EC3F8C2E79B49A0094B81F /* Habit HomeUITests */,
 			);
@@ -267,12 +260,12 @@
 /* Begin PBXTargetDependency section */
 		A9EC3F852E79B49A0094B81F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A9EC3F752E79B4970094B81F /* Habit Home */;
+			target = A9EC3F752E79B4970094B81F /* Habit Flow */;
 			targetProxy = A9EC3F842E79B49A0094B81F /* PBXContainerItemProxy */;
 		};
 		A9EC3F8F2E79B49A0094B81F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A9EC3F752E79B4970094B81F /* Habit Home */;
+			target = A9EC3F752E79B4970094B81F /* Habit Flow */;
 			targetProxy = A9EC3F8E2E79B49A0094B81F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -337,6 +330,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -394,6 +388,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -419,7 +414,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ayush.exe.Habit-Home";
+				PRODUCT_BUNDLE_IDENTIFIER = "ayush.exe.Habit-Flow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -447,7 +442,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ayush.exe.Habit-Home";
+				PRODUCT_BUNDLE_IDENTIFIER = "ayush.exe.Habit-Flow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -530,7 +525,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A9EC3F712E79B4970094B81F /* Build configuration list for PBXProject "Habit Home" */ = {
+		A9EC3F712E79B4970094B81F /* Build configuration list for PBXProject "Habit Flow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9EC3F952E79B49A0094B81F /* Debug */,
@@ -539,7 +534,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9EC3F972E79B49A0094B81F /* Build configuration list for PBXNativeTarget "Habit Home" */ = {
+		A9EC3F972E79B49A0094B81F /* Build configuration list for PBXNativeTarget "Habit Flow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9EC3F982E79B49A0094B81F /* Debug */,
@@ -567,25 +562,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A9EC3FB22E79B5020094B81F /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A9EC3FB32E79B5020094B81F /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A9EC3FB22E79B5020094B81F /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A9EC3F6E2E79B4970094B81F /* Project object */;
 }

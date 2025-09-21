@@ -6,13 +6,13 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct Habit_HomeApp: App {
    
     @AppStorage("lastLaunchDate") private var lastLaunchDate: Double = 0
     @AppStorage("streakCount") private var streakCount = 0
-    
     @AppStorage("isLoggedIn") var isLoggedIn: Bool = false
     
     @State private var isSplashActive = true
@@ -42,7 +42,7 @@ struct Habit_HomeApp: App {
                                 }
                             }
                         }
-        }
+        }.modelContainer(for: Habit.self)
     }
     
     private func updateStreak() {
