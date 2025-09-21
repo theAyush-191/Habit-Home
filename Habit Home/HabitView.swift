@@ -1,25 +1,30 @@
 
 
 import SwiftUI
-import RealmSwift
+import SwiftData
 
-class Habit: Object, Identifiable{
-    
-    @Persisted(primaryKey: true) var id: ObjectId
-    @Persisted var name: String = ""
-    @Persisted var isCompleted: Bool = false
-    
-    convenience init(name: String, isCompleted: Bool = false) {
-        self.init()
-        self.name = name
-        self.isCompleted = isCompleted
-    }
-}
+//class Habit: Object, Identifiable{
+//    
+//    @Persisted(primaryKey: true) var id: ObjectId
+//    @Persisted var name: String = ""
+//    @Persisted var isCompleted: Bool = false
+//    
+//    convenience init(name: String, isCompleted: Bool = false) {
+//        self.init()
+//        self.name = name
+//        self.isCompleted = isCompleted
+//    }
+//}
 
 
 struct HabitView: View {
     
-    @ObservedResults(Habit.self) var habits
+//    @ObservedResults(Habit.self) var habits
+    @Environment(\.modelContext)private var Context
+    
+    @Query(sort:(\Habit.createdAt),order: .reverse, animation: .bouncy)
+    private var habits:[Habit]
+    
     @State var isAddingHabit: Bool = false
     @State var habitName = ""
     var streak: Int = 0
@@ -53,8 +58,8 @@ struct HabitView: View {
                         let trimmedString = habitName.trimmingCharacters(in: .whitespacesAndNewlines)
                         
                         if !trimmedString.isEmpty {
-                            let newHabit = Habit(name: trimmedString)
-                            $habits.append(newHabit)
+                            let newHabit = Habit(habit: trimmedString)
+                            Context.insert(newHabit)
                             habitName=""
                         }
                     }
@@ -71,7 +76,8 @@ struct HabitView: View {
  
             ZStack{
                 Color(.systemGroupedBackground)
-                if habits.isEmpty {
+                if habits
+                    .isEmpty {
                     VStack {
                         Spacer()
                         Text("No habits yet!")
@@ -103,7 +109,7 @@ struct HabitView: View {
                         
                         ScrollView{
                             ForEach(habits) { habit in
-                                HabitRowView(habit: habit)
+                                HabitRowView( habit: habit)
                                     .padding(.horizontal)
                             }
                             Spacer()

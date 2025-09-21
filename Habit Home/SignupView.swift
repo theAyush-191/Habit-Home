@@ -17,7 +17,7 @@ struct SignupView: View {
     @State var showHomeView: Bool = false
     
     @Environment(\.dismiss) private var dismiss
-    
+    @AppStorage("isLoggedIn") var isLoggedIn: Bool = false
     var body: some View {
         VStack(spacing:20) {
             
@@ -50,6 +50,10 @@ struct SignupView: View {
             
 
             Button(action:{
+                name=""
+                email=""
+                password=""
+                isLoggedIn=true
                 showHomeView=true
             }){
                 Text("Sign Up ").font(.title2).padding(20).foregroundColor(.white).frame(width: .infinity, height: 50).background(RoundedRectangle(cornerRadius: 30).fill(Color("customGreen")).stroke(Color("customGreen"), lineWidth: 2))
